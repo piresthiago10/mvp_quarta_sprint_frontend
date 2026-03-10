@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My New Website</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="src/css/custom.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bem-estar Mental da Geração Z & Estilo de Vida Digital</h1>
+        <p>Aplicação para predição de risco de burnout (Esgotamento Mental).</p>
+    </header>
+
+    <main>
+        <section id="app-description">
+            <h3>Sobre a aplicação</h3>
+
+            <p>
+                Esta aplicação interativa foi desenvolvida para explorar a relação entre
+                <strong>hábitos digitais, estilo de vida e indicadores de bem-estar mental
+                    entre jovens da Geração Z</strong> (18–26 anos). Utilizando técnicas de
+                <strong>Machine Learning</strong>, a plataforma analisa diferentes padrões
+                comportamentais e estima o possível nível de risco de <strong>burnout</strong>
+                com base em fatores do cotidiano.
+            </p>
+
+            <p>
+                A aplicação considera variáveis como <strong>tempo de uso de redes sociais,
+                    tempo de tela, padrões de sono, frequência de exercícios físicos,
+                    carga de estudo ou trabalho e consumo de cafeína</strong>.
+                A partir dessas informações, o sistema identifica padrões e fornece
+                uma estimativa do nível de risco de esgotamento mental.
+            </p>
+
+            <p>
+                O objetivo da aplicação é demonstrar como dados comportamentais podem ser
+                utilizados para compreender melhor a relação entre <strong>tecnologia,
+                    hábitos diários e saúde mental</strong>, além de servir como um exemplo
+                prático do uso de <strong>ciência de dados e aprendizado de máquina</strong>
+                na análise de comportamento humano.
+            </p>
+
+            <p>
+                Esta ferramenta tem caráter <strong>educacional e experimental</strong> e
+                não deve ser utilizada como diagnóstico clínico ou avaliação médica.
+            </p>
+
+            <button type="button">Fazer Predição</button>
+        </section>
+
+        <section id="form" class="form-group">
+            <form id="wellness-form">
+
+                <h3>Gen Z Wellness Analysis</h3>
+
+                <label>Age</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="Age" value="18"> 18</label>
+                    <label><input type="radio" name="Age" value="19"> 19</label>
+                    <label><input type="radio" name="Age" value="20" checked> 20</label>
+                    <label><input type="radio" name="Age" value="21"> 21</label>
+                    <label><input type="radio" name="Age" value="22"> 22</label>
+                    <label><input type="radio" name="Age" value="23"> 23</label>
+                    <label><input type="radio" name="Age" value="24"> 24</label>
+                    <label><input type="radio" name="Age" value="25"> 25</label>
+                    <label><input type="radio" name="Age" value="26"> 26</label>
+                </div>
+                <br>
+
+                <label>Gender</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="Gender" value="0"> Female</label>
+                    <label><input type="radio" name="Gender" value="1"> Male</label>
+                    <label><input type="radio" name="Gender" value="2"> Non-binary</label>
+                </div>
+                <br>
+
+                <label>Student / Working Status</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="Student_Working_Status" value="0"> Both</label>
+                    <label><input type="radio" name="Student_Working_Status" value="1"> Student</label>
+                    <label><input type="radio" name="Student_Working_Status" value="2"> Working</label>
+                </div>
+                <br>
+
+                <label>Daily Social Media Hours</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="Daily_Social_Media_Hours" value="0"> 0</label>
+                    <label><input type="radio" name="Daily_Social_Media_Hours" value="1"> 1</label>
+                    <label><input type="radio" name="Daily_Social_Media_Hours" value="2"> 2</label>
+                    <label><input type="radio" name="Daily_Social_Media_Hours" value="3"> 3</label>
+                    <label><input type="radio" name="Daily_Social_Media_Hours" value="4"> 4</label>
+                    <label><input type="radio" name="Daily_Social_Media_Hours" value="5"> 5</label>
+                    <label><input type="radio" name="Daily_Social_Media_Hours" value="6"> 6</label>
+                    <label><input type="radio" name="Daily_Social_Media_Hours" value="7"> 7</label>
+                </div>
+                <br>
+
+                <label>Screen Time Hours</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="Screen_Time_Hours" value="0"> 0</label>
+                    <label><input type="radio" name="Screen_Time_Hours" value="1"> 1</label>
+                    <label><input type="radio" name="Screen_Time_Hours" value="2"> 2</label>
+                    <label><input type="radio" name="Screen_Time_Hours" value="3"> 3</label>
+                    <label><input type="radio" name="Screen_Time_Hours" value="4"> 4</label>
+                    <label><input type="radio" name="Screen_Time_Hours" value="5"> 5</label>
+                    <label><input type="radio" name="Screen_Time_Hours" value="6"> 6</label>
+                    <label><input type="radio" name="Screen_Time_Hours" value="7"> 7</label>
+                    <label><input type="radio" name="Screen_Time_Hours" value="8"> 8</label>
+                    <label><input type="radio" name="Screen_Time_Hours" value="9"> 9</label>
+                    <label><input type="radio" name="Screen_Time_Hours" value="10"> 10+</label>
+                </div>
+                <br>
+
+                <label>Night Scrolling Frequency</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="Night_Scrolling_Frequency" value="0"> Never</label>
+                    <label><input type="radio" name="Night_Scrolling_Frequency" value="1"> Rarely</label>
+                    <label><input type="radio" name="Night_Scrolling_Frequency" value="2"> Sometimes</label>
+                    <label><input type="radio" name="Night_Scrolling_Frequency" value="3"> Often</label>
+                    <label><input type="radio" name="Night_Scrolling_Frequency" value="4"> Very Often</label>
+                </div>
+                <br>
+
+                <label>Online Gaming Hours</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="Online_Gaming_Hours" value="0"> 0</label>
+                    <label><input type="radio" name="Online_Gaming_Hours" value="1"> 1</label>
+                    <label><input type="radio" name="Online_Gaming_Hours" value="2"> 2</label>
+                    <label><input type="radio" name="Online_Gaming_Hours" value="3"> 3</label>
+                    <label><input type="radio" name="Online_Gaming_Hours" value="4"> 4</label>
+                    <label><input type="radio" name="Online_Gaming_Hours" value="5"> 5+</label>
+                </div>
+                <br>
+
+                <label>Content Type Preference</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="Content_Type_Preference" value="0"> Educational</label>
+                    <label><input type="radio" name="Content_Type_Preference" value="1"> Entertainment</label>
+                    <label><input type="radio" name="Content_Type_Preference" value="2"> Gaming</label>
+                    <label><input type="radio" name="Content_Type_Preference" value="3"> Lifestyle</label>
+                    <label><input type="radio" name="Content_Type_Preference" value="4"> News</label>
+                </div>
+                <br>
+
+                <label>Exercise Frequency per Week</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="Exercise_Frequency_per_Week" value="0"> 0</label>
+                    <label><input type="radio" name="Exercise_Frequency_per_Week" value="1"> 1</label>
+                    <label><input type="radio" name="Exercise_Frequency_per_Week" value="2"> 2</label>
+                    <label><input type="radio" name="Exercise_Frequency_per_Week" value="3"> 3</label>
+                    <label><input type="radio" name="Exercise_Frequency_per_Week" value="4"> 4</label>
+                    <label><input type="radio" name="Exercise_Frequency_per_Week" value="5"> 5+</label>
+                </div>
+                <br>
+
+                <label>Daily Sleep Hours</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="Daily_Sleep_Hours" value="4"> 4</label>
+                    <label><input type="radio" name="Daily_Sleep_Hours" value="5"> 5</label>
+                    <label><input type="radio" name="Daily_Sleep_Hours" value="6"> 6</label>
+                    <label><input type="radio" name="Daily_Sleep_Hours" value="7"> 7</label>
+                    <label><input type="radio" name="Daily_Sleep_Hours" value="8"> 8</label>
+                    <label><input type="radio" name="Daily_Sleep_Hours" value="9"> 9</label>
+                    <label><input type="radio" name="Daily_Sleep_Hours" value="10"> 10+</label>
+                </div>
+                <br>
+
+                <label>Caffeine Intake (cups per day)</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="Caffeine_Intake_Cups" value="0"> 0</label>
+                    <label><input type="radio" name="Caffeine_Intake_Cups" value="1"> 1</label>
+                    <label><input type="radio" name="Caffeine_Intake_Cups" value="2"> 2</label>
+                    <label><input type="radio" name="Caffeine_Intake_Cups" value="3"> 3</label>
+                    <label><input type="radio" name="Caffeine_Intake_Cups" value="4"> 4+</label>
+                </div>
+                <br>
+
+                <label>Study / Work Hours per Day</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="Study_Work_Hours_per_Day" value="0"> 0</label>
+                    <label><input type="radio" name="Study_Work_Hours_per_Day" value="2"> 2</label>
+                    <label><input type="radio" name="Study_Work_Hours_per_Day" value="4"> 4</label>
+                    <label><input type="radio" name="Study_Work_Hours_per_Day" value="6"> 6</label>
+                    <label><input type="radio" name="Study_Work_Hours_per_Day" value="8"> 8</label>
+                    <label><input type="radio" name="Study_Work_Hours_per_Day" value="10"> 10+</label>
+                </div>
+                <br>
+
+                <button type="submit">Enviar Resposta</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Risco de burnout para o indivíduo:</h3>
+            <h2 id="result" style="text-align: center;">Baixo</h2>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Thiago Pires.</p>
+    </footer>
+</body>
+
+</html>
